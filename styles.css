@@ -31,6 +31,7 @@ h2 {
     border-bottom: 3px dashed hotpink;
     width: 60%;
     margin: 20px auto;
+    animation: rainbow 3s infinite linear;
 }
 
 p {
@@ -50,4 +51,21 @@ p {
     60%  { color: #00ff00; }
     80%  { color: #0000ff; }
     100% { color: #8b00ff; }
+    
+.music-player {
+    margin: 30px auto;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ff00ff;
+    text-align: center;
+}
+
+.music-player audio {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+}
+
 }
