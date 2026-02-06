@@ -36,32 +36,42 @@
     </div>
 
     <div id="youtube-player"></div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-player', {
+            height: '0',
+            width: '0',
+            videoId: 'M1FhQp5P3SQ',
+            playerVars: {
+                autoplay: 1,
+                loop: 1,
+                playlist: 'M1FhQp5P3SQ',
+                controls: 0,
+                modestbranding: 1,
+                fs: 0,
+                cc_load_policy: 0,
+                iv_load_policy: 3,
+                mute: 0
+            },
+            events: {
+                'onReady': (event) => event.target.playVideo()
+            }
+        });
+    }
 
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script>
-        let player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('youtube-player', {
-                height: '0',
-                width: '0',
-                videoId: 'M1FhQp5P3SQ',
-                playerVars: {
-                    autoplay: 1,
-                    loop: 1,
-                    playlist: 'M1FhQp5P3SQ',
-                    controls: 0,
-                    modestbranding: 1,
-                    fs: 0,
-                    cc_load_policy: 0,
-                    iv_load_policy: 3,
-                    mute: 0
-                },
-                events: {
-                    'onReady': (event) => event.target.playVideo()
-                }
-            });
-        }
-    </script>
+</script>
 
-</body>
-</html>
+<h3> Lime Cookie Factory <h3>
+<div id="clicker-container">
+    <button id="btn">
+        <img 
+            src="https://static.wikia.nocookie.net/cookierunkingdom/images/4/4c/Lime_illustration.png/revision/latest?cb=20250730034703"
+            alt="ufo"
+            id="btn-img"
+        >
+
+    <div id="display">0<div>
+</div>
+<script src=script.js></script>
